@@ -1,36 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hero_games_case/screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  runApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text("Page 1"),
-              ),
-              const SizedBox(
-                width: 10.0,
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text("Page 2"),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+      home: HomeScreen(),
+    ),
+  );
 }
