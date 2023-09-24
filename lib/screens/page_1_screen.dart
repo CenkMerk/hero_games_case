@@ -42,6 +42,7 @@ class _Page1ScreenState extends State<Page1Screen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: CustomAppBar(
           onBackButtonPressed: () {
             Navigator.pop(context);
