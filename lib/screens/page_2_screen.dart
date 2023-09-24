@@ -60,7 +60,7 @@ class _Page1ScreenState extends State<Page2Screen> {
               .toList(),
           currentIndex: _selectedIndex,
           showSelectedLabels: false,
-          selectedItemColor: Colors.green[800],
+          selectedItemColor: Colors.indigo,
           unselectedItemColor: Colors.grey,
           onTap: _onItemTapped,
         ),
